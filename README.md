@@ -26,5 +26,4 @@ No installation needed. Clone or download the repository and open `index.html` i
 ## License
 This project is for educational purposes only.
 
-## Author
-[Your Name]
+
