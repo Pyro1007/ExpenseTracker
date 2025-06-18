@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <h1>Expense Tracker</h1>
+        </div>
+        <div class="nav-right">
+            <a href="index.html">Home</a>
+            <a href="transactions.html">Transactions</a>
+            <a href="bills.html">Bills</a>
+            <a href="savings-goals.html">Goals</a>
+            <a href="profile.html">Profile</a> <!-- Added Profile link -->
+        </div>
+    </nav>
+    <div class="container">
+        <section class="overview">
+            <h2>Overview</h2>
+            <div class="total">
+                <h3>Total Expenses: <span id="total-expense">$0</span></h3>
+                <h3>Total Earnings: <span id="total-earning">$0</span></h3>
+            </div>
+        </section>
+
+        <div class="sections">
+            <div class="section earnings">
+                <h3>Earnings</h3>
+                <p id="earnings-total">$0</p>
+            </div>
+            <div class="section expenses">
+                <h3>Expenses</h3>
+                <p id="expenses-total">$0</p>
+            </div>
+            <div class="section bills">
+                <h3>Bills</h3>
+                <p id="bills-total">$0</p>
+            </div>
+            <div class="section savings-goals">
+                <h3>Savings Goals</h3>
+                <p id="savings-total">$0</p>
+            </div>
+        </div>
+
+        <button class="add-button">+</button>
+    </div>
+
+    <!-- Popup for adding transactions -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Add Transaction</h2>
+            <select id="transaction-type">
+                <option value="earning">Earning</option>
+                <option value="expense">Expense</option>
+                <option value="bills">Bills</option>
+                <option value="savings-goal">Savings Goal</option>
+                <option value="savings">Savings</option>
+            </select>
+            <div id="input-fields"></div>
+            <button id="add-transaction">Add</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
